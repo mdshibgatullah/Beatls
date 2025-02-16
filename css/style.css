@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+
+
+:root{
+     --color1: #0872b9;
+     --color2: #59c3f3;
+}
+
+
+/** common css */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow", sans-serif;
+}
+p{
+    letter-spacing: 1px;
+}
+ul{
+    list-style: none;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: #000;
+}
+img{
+    vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Oswald", sans-serif;
+
+}
+p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+/*welcome Area*/
+
+.WelcomePart{
+    background-color: var(--color1);
+}
+
+.welcomeIcon li a:hover{
+      color: #353535 !important;
+      transition: 0.3s;
+}
+/*welcome Area end*/
+
+/*------------------------------------*/
+
+/*Menu Area*/
+
+
+
+.nav-item a{
+    color: #353535;
+    font-weight: 500;
+}
+
+.nav-item:hover{
+    columns: var(--color1);
+}
+/*Menu Area end*/
+
+/*------------------------------------*/
+
+
+/*Hero Area*/
+
+.heroPart{
+    background: url(../image/02-Beatles.png) no-repeat center;
+    background-size: cover;
+    padding: 150px 0;
+}
+
+.heroCon h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.heroCon{
+    line-height: 1.9;
+}
+
+
+.heroBTN a{
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 0;
+    border: 2px solid var(--color1);
+}
+
+.heroBTN a:hover{
+    background: transparent;
+    border: 2px solid white;
+}
+
+/*Hero Area end*/
+
+/*------------------------------------*/
+
+
+/*About Area*/
+
+.about{
+    padding-top: 80px;
+}
+.aboutHead{
+    text-transform: uppercase;
+    color: #353535;
+    font-weight: 600;
+}
+.line3,
+.line2,
+.line1{
+    width: 50px;
+    height: 2px;
+    background: var(--color1);
+}
+
+.line2{
+    width: 4px;
+}
+
+.line3{
+    width: 2px;
+}
+
+.aboutConM p{
+    color: #353535;
+}
+/*About Area end*/
+
+/*------------------------------------*/
+
+/*Service Area*/
+
+.servicesCon{
+    background: #f1f1f1;
+    transition: .3s;
+}
+.servicesCon:hover{
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, .2) ;
+}
+
+.servicesCon p{
+    font-size: 14px;
+}
+
+.serviceIcon{
+    width: 80px;
+    height: 80px;
+    background: #f1f1f1;
+    border: 5px double white;
+    border-radius: 50%;
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: .3s;
+}
+
+.servicesCon:hover .serviceIcon{
+    background: var(--color2);
+}
+/*Service Area end*/
+
+/*------------------------------------*/
+
+/*portfolio Area*/
+
+.overFlow{
+    top: 0;
+    background-color: rgba(0, 0, 0, .6);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+
+.portimg:hover .overFlow{
+    visibility: visible;
+    opacity: 1;
+}
+
+.overFlow a{
+    height: 40px;
+    width: 40px;
+    background: var(--color2);
+    color: white;
+    border-radius: 50%;
+    display: block;
+}
+/*portfolio Area end*/
+
+/*------------------------------------*/
+
+/*team Area*/
+
+.teamName h3{
+   text-transform: uppercase;
+   font-size: 18px;
+   font-weight: 700;
+   margin-top: 15px;
+   transition: .4s;
+}
+.teamName p{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.teamOverlay{
+    background: rgba(0, 0, 0, .6);
+    top: 0;
+    right: 0;
+    width: 33%;
+    visibility: hidden;
+    opacity: 0;
+    right: -100px;
+    transition: .4s;
+
+}
+
+.teamImg:hover .teamOverlay{
+   visibility: visible;
+   opacity: 1;
+   right: 0px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+}
+
+.teamOverlay li a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    transition: .4s;
+    
+}
+
+
+.teamOverlay li a:hover{
+    background: var(--color2);
+}
+
+.teamImg{
+    transition: .4s;
+    overflow: hidden;
+}
+.teamImg:hover{
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, .2);
+}
+.teamImg:hover ~ .teamName h3{
+    color: var(--color2);
+}
+/*team Area end*/
+
+/*------------------------------------*/
+/*Testimonial Area end*/
+.textCon{
+    background: #f1f1f1;
+}
+
+.textCon h4, h6{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.teamIcon{
+    color: var(--color2);
+}
+
+.dividBox{
+    height: 40px;
+    width: 40px;
+    background: #f1f1f1;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+/*Testimonial Area*/
+
+/*------------------------------------*/
+
+/*Footer Area end*/
+
+.footer{
+    background: #353535;
+    padding: 40px 0;
+}
+
+.fIcon{
+    height: 50px;
+    width: 50px;
+    background: var(--color2);
+    border-radius: 50%;
+}
+
+.impLink li a{
+   color: white;
+   margin-bottom: 10px;
+   display: block;
+   transition: .4s;
+}
+
+.impLink li a:hover{
+    color: var(--color1);
+}
+
+footer{
+    background: #6b6b6b;
+    color: white;
+}
+/*Footer Area*/
+
+/*------------------------------------*/
+
+
+.hhh{
+   text-transform: uppercase;
+   height: 40px;
+   width: 100px;
+   position: relative;
+   border: none;
+   overflow: hidden;
+   
+}
+
+.hhh::after{
+    content: '';
+    background: #926767;
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100px);
+    transition: 1s;
+
+}
+
+.hhh:hover::after{
+    transform: translate(0);
+    background: transparent;
+
+}
+
+.nav-icon i{
+    font-size: 20px;
+}
+
+.nav-icon{
+opacity: 0;
+}
+
+
+@media only screen and (min-width: 768px){
+    .nav-icon{
+        opacity: 1;
+    }
+}
